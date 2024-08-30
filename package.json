@@ -1,0 +1,30 @@
+{
+  "name": "ts-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "debug": "node ./dist/index.js analyze -d -v -p E:/Tomo/ccm/tool_codebase_linker -o html -e self.html",
+    "debug_local": "node ./dist/index.js analyze -d -v -p . -o html -e self.html",
+    "test": "tsx src/index.ts analyze -d -v -p E:/Tomo/ccm/tool_codebase_linker",
+    "test_local": "tsx src/index.ts analyze d -v -p . -o html -e self.html"
+  },
+  "author": "tomtuz",
+  "packageManager": "pnpm@9.9.0",
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "picocolors": "^1.0.1",
+    "zod": "^3.23.8"
+  }
+}

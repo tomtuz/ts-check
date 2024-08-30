@@ -1,0 +1,7 @@
+node_modules
+docs/private/*
+dist
+*.txt
+*.html
+*.tsbuildinfo
+*-debug.json
